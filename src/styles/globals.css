@@ -1,0 +1,65 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  /*color: var(--foreground);
+   background: var(--background);
+   height: 100vh; 
+   background-image: url('/marmoSfondo_edited.jpg'); */
+  font-family: Arial, Helvetica, sans-serif;
+  background-repeat: repeat; 
+  background-size: auto; 
+  background-position: top left; 
+}
+
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('../pages/fonts/Roboto/Roboto-Black.ttf');
+  font-weight: 900; /* titoli*/
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('../pages/fonts/Roboto/Roboto-Thin.ttf');
+  font-weight: 100; /* paragrafi */
+  font-style: normal;
+}
+
+
+h1, h2, h3 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 900;
+}
+
+
+p {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 100; 
+}
+
+
+h1 {
+  font-size: 2.5rem; 
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+
