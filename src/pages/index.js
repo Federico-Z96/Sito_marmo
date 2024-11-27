@@ -20,7 +20,7 @@ export default function Home() {
       });
   
       // Seleziona tutti gli <h*> e <p> dinamicamente
-      const headings = document.querySelectorAll("h1, h2, h3, h4, h5, h6, p");
+      const headings = document.querySelectorAll(".animated");
       headings.forEach((element) => {
         element.setAttribute("data-aos", "fade-up"); // Assegna l'effetto "fade-up"
       });
@@ -30,7 +30,7 @@ export default function Home() {
       {/* <HeaderCarusel /> */}
       <Navbar />
       <main>
-        <section id="storia" style={{ height: "100vh"}}>
+        <section id="storia" >
         <Storia
            title="Storia"
            leftImage="/enormi-blocchi-di-marmo-estratto.jpg"
@@ -42,7 +42,7 @@ export default function Home() {
                 in opere d'arte. Un connubio perfetto tra tradizione e modernità, capace di soddisfare anche i clienti più esigenti."
            buttonLink="/#contatti"
           />
-          
+        
 
         </section>
         <section id="chi-siamo">
@@ -51,17 +51,14 @@ export default function Home() {
           subtitle="Un po' della nostra storia"
           imageSrc="/katie-moum-9jNcTRncjgM-unsplash.jpg"
           extraImageSrc="/annie-spratt-osuiatBDTww-unsplash_edited.jpg"
-          description="Il Tempio del Marmo è un'azienda leader nella lavorazione del marmo, specializzata nella creazione di prodotti
-                        di alta qualità per arredare e decorare ogni ambiente. Con una tradizione artigianale che si tramanda da generazioni,
-                        Il Tempio del Marmo offre una vasta gamma di soluzioni su misura, tra cui scale eleganti, tavoli raffinati, cucine funzionali,
-                        statue artistiche e oggettistica varia come posaceneri e sottobicchieri. Ogni pezzo è realizzato con la massima cura e attenzione 
-                        ai dettagli, utilizzando solo i migliori materiali per garantire durabilità e bellezza senza tempo. Il Tempio del Marmo si distingue
-                         per la sua capacità di trasformare il marmo in vere e proprie opere d'arte, soddisfacendo le esigenze di una clientela esigente e raffinata."               
+          description="Il Tempio del Marmo è un'azienda leader nella lavorazione del marmo, specializzata in prodotti di alta qualità per arredare e decorare. Con una tradizione artigianale tramandata da generazioni, offre soluzioni su misura come scale, tavoli, cucine, statue e oggettistica. Ogni pezzo è realizzato con cura e materiali di alta qualità, garantendo durabilità e bellezza senza tempo. L'azienda si distingue per trasformare il marmo in opere d'arte, soddisfacendo una clientela esigente e raffinata."               
           />
+        </section>
+    <section id="made-by-us" >
+          <MadeByUs />
         </section>
         <section
           id="contatti"
-          style={{ height: "100vh"}}
         >
           <Contatti
         title="Contatti"
@@ -78,13 +75,9 @@ export default function Home() {
         ]}
       />
     </section>
-    <section id="made-by-us" >
-          <MadeByUs />
-        </section>
-        
       </main>
       <Footer
-      logo=""
+      logo="/un_cubo_di_marmo_senza_sfondo-removebg-preview.png"
       />
     </>
   );

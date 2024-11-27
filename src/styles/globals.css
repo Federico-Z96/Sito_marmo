@@ -20,46 +20,97 @@ body {
    height: 100vh; 
    background-image: url('/marmoSfondo_edited.jpg'); */
   font-family: Arial, Helvetica, sans-serif;
-  background-repeat: repeat; 
-  background-size: auto; 
-  background-position: top left; 
 }
 
-
 @font-face {
-  font-family: 'Roboto';
-  src: url('../pages/fonts/Roboto/Roboto-Black.ttf');
+  font-family: "Roboto-b";
+  src: url("../pages/fonts/Roboto/Roboto-Black.ttf");
   font-weight: 900; /* titoli*/
   font-style: normal;
 }
 
-
 @font-face {
-  font-family: 'Roboto';
-  src: url('../pages/fonts/Roboto/Roboto-Thin.ttf');
+  font-family: "Roboto-t";
+  src: url("../pages/fonts/Roboto/Roboto-Thin.ttf");
   font-weight: 100; /* paragrafi */
   font-style: normal;
 }
 
-
-h1, h2, h3 {
-  font-family: 'Roboto', sans-serif;
+h1,
+h2,
+h3 {
+  font-family: "Roboto-b", sans-serif;
   font-weight: 900;
 }
 
-
 p {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 100; 
+  font-family: "Roboto-t", sans-serif;
+  font-weight: 100;
+}
+footer a {
+  font-family: "Roboto-t", sans-serif;
+  font-weight: 100;
 }
 
-
 h1 {
-  font-size: 2.5rem; 
+  font-size: 2.5rem;
 }
 
 h2 {
   font-size: 2rem;
 }
 
+/* classe che forza la disabilitazione dell'animazione */
+.disable-aos {
+  opacity: 1 !important;
+  transform: none !important;
+  animation: none !important;
+}
 
+@media (max-width: 1024px) {
+  /* Tablet */
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.75rem;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  ul {
+    display: flex !important;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  h2 {
+    font-size: 2rem !important;
+  }
+
+  h3 {
+    font-size: 1.25rem !important;
+  }
+  p {
+    font-size: 0.875rem;
+  }
+  .divs{
+    display: none;
+  }
+  .storia-btn {
+    display: block;
+    margin: 0 auto; 
+    text-align: center; 
+  }
+}
