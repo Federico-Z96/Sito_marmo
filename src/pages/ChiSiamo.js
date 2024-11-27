@@ -1,16 +1,16 @@
 import React from "react";
 
-export default function ChiSiamo({ title, subtitle, imageSrc, extraImageSrc, description }) {
+export default function ChiSiamo({ id, title, subtitle, imageSrc, extraImageSrc, description }) {
   return (
-    <section className="py-16 px-8 mx-auto max-w-screen-lg lg:mt-24 relative" data-aos="fade-up">
+    <section id={id} className="py-16 mx-auto max-w-screen-lg lg:mt-24 relative" data-aos="fade-up">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
 
         <div className="h-auto relative">
 
-          <img 
-            src={imageSrc} 
-            alt="Chi Siamo" 
-            className="w-full h-auto object-cover" 
+          <img
+            src={imageSrc}
+            alt="Chi Siamo"
+            className="w-full h-auto object-cover"
           />
 
           <div className="absolute top-[-75px] left-20 w-full h-1/2 object-cover z-[-1] bg-gray-800 divs"></div>
@@ -31,4 +31,3 @@ export default function ChiSiamo({ title, subtitle, imageSrc, extraImageSrc, des
 
 
 
-  
