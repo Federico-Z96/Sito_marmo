@@ -12,7 +12,7 @@ export default function Footer({ logo }) {
           <img
             src={logo}
             alt="Logo Azienda"
-            className="w-20 h-20 mx-auto hover:scale-110 transition-transform duration-300"
+            className="w-20 h-20 mx-auto hover:scale-150 transition-transform duration-500 hover:rotate-12"
           />
         </a>
 

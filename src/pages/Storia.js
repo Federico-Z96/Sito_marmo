@@ -1,11 +1,11 @@
 import React from "react";
 
-export default function Storia({ id, title, leftImage, video, subTitle, text, buttonLink }) {
+export default function Storia({ id, title, leftImage, subTitle, text, buttonLink }) {
   return (
-    <section id={id} className="py-4 mx-auto max-w-screen-lg mt-20 ">
+    <section id={id} className="py-4 mx-auto max-w-screen-lg lg:mt-12 ">
       {/* Video sopra il titolo */}
       <div className="mb-8">
-        <video
+        {/* <video
           src={video}
           className="w-full max-w-full h-auto object-cover  mb-4"
           autoPlay
@@ -13,7 +13,7 @@ export default function Storia({ id, title, leftImage, video, subTitle, text, bu
           loop
           playsInline
           data-aos="fade-up"
-        ></video>
+        ></video> */}
         <h2 className="text-4xl md:text-6xl lg:text-8xl font-bold text-gray-800 text-center pt-12" data-aos="fade-up">
           {title}
         </h2>

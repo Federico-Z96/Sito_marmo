@@ -9,13 +9,12 @@ import Storia from "./Storia";
 import Contatti from "./Contatti";
 import Footer from "./Footer";
 
-
 export default function Home() {
   useEffect(() => {
     // Inizializza AOS
     AOS.init({
       duration: 1000, // Durata animazioni
-      once: true,     // Animazione una sola volta
+      once: true, // Animazione una sola volta
     });
 
     // Seleziona tutti gli <h*> e <p> dinamicamente
@@ -29,11 +28,18 @@ export default function Home() {
       {/* <HeaderCarusel /> */}
       <Navbar />
       <main>
+        <video
+          src="/lavorazione marmo-video.mp4"
+          className="w-full max-w-full h-auto object-cover  mb-4"
+          autoPlay
+          muted
+          loop
+          playsInline
+        ></video>
         <Storia
           id="storia"
           title="Storia"
-          leftImage="/enormi-blocchi-di-marmo-estratto.jpg"
-          video="/lavorazione marmo-video.mp4"
+          leftImage="/lavorazione-sfera-marmo-transformed.jpeg"
           subTitle="La tradizione che incotra l'arte"
           text="Il Tempio del Marmo: una storia di passione e maestria che dura da tre generazioni. Nata agli inizi del Novecento, 
                 l'azienda ha le sue radici nella paziente estrazione del marmo dalle montagne. Oggi, grazie all'innovazione e alla 
@@ -42,33 +48,41 @@ export default function Home() {
           buttonLink="/#contatti"
         />
 
-
-        <ChiSiamo id="chi-siamo"
+        <ChiSiamo
+          id="chi-siamo"
           title="Chi Siamo"
           subtitle="Un po' della nostra storia"
-          imageSrc="/katie-moum-9jNcTRncjgM-unsplash.jpg"
+          imageSrc="/chisiamo-lavorazione-transformed.jpeg"
           extraImageSrc="/annie-spratt-osuiatBDTww-unsplash_edited.jpg"
           description="Il Tempio del Marmo è un'azienda leader nella lavorazione del marmo, specializzata in prodotti di alta qualità per arredare e decorare. Con una tradizione artigianale tramandata da generazioni, offre soluzioni su misura come scale, tavoli, cucine, statue e oggettistica. Ogni pezzo è realizzato con cura e materiali di alta qualità, garantendo durabilità e bellezza senza tempo. L'azienda si distingue per trasformare il marmo in opere d'arte, soddisfacendo una clientela esigente e raffinata."
         />
         <MadeByUs id="made-by-us" />
-        <Contatti id="contatti"
+        <Contatti
+          id="contatti"
           title="Contatti"
-          imageSrc="/OIP.jpeg"
+          imageSrc="/lavorazione-statuajpg-transformed.jpeg"
           imgSfondoCont="/annie-spratt-osuiatBDTww-unsplash_edited.jpg"
           subTitle="Dove trovarci"
           text="Per maggiori informazioni non esitare a contattarci tramite i nostri canali ufficiali."
           socialLinks={[
-            { icon: "/instagram-brands-solid.svg", link: "https://instagram.com" },
-            { icon: "/facebook-brands-solid.svg", link: "https://facebook.com" },
-            { icon: "/linkedin-brands-solid.svg", link: "https://linkedin.com" },
+            {
+              icon: "/instagram-brands-solid.svg",
+              link: "https://instagram.com",
+            },
+            {
+              icon: "/facebook-brands-solid.svg",
+              link: "https://facebook.com",
+            },
+            {
+              icon: "/linkedin-brands-solid.svg",
+              link: "https://linkedin.com",
+            },
             { icon: "/envelope-solid.svg", link: "mailto:yourname@gmail.com" },
             { icon: "/youtube-brands-solid.svg", link: "https://youtube.com" },
           ]}
         />
       </main>
-      <Footer
-        logo="/un_cubo_di_marmo_senza_sfondo-removebg-preview.png"
-      />
+      <Footer logo="/un_cubo_di_marmo_senza_sfondo-removebg-preview.png" />
     </>
   );
 }
