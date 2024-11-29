@@ -30,7 +30,7 @@ export default function Home() {
       <main>
         <video
           src="/lavorazione marmo-video.mp4"
-          className="w-full max-w-full h-auto object-cover  mb-4"
+          className="w-full max-w-full h-auto object-cover mb-4"
           autoPlay
           muted
           loop
@@ -77,7 +77,7 @@ export default function Home() {
               icon: "/linkedin-brands-solid.svg",
               link: "https://linkedin.com",
             },
-            { icon: "/envelope-solid.svg", link: "mailto:yourname@gmail.com" },
+            { icon: "/envelope-solid.svg", link: "mailto:email@gmail.com" },
             { icon: "/youtube-brands-solid.svg", link: "https://youtube.com" },
           ]}
         />

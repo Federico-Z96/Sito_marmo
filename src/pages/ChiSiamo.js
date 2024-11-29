@@ -13,7 +13,7 @@ export default function ChiSiamo({ id, title, subtitle, imageSrc, extraImageSrc,
             className="w-full h-auto object-cover"
           />
 
-          <div className="absolute top-[-75px] left-20 w-full h-1/2 object-cover z-[-1] bg-gray-800 divs"></div>
+          <div className="absolute top-[-75px] left-20 w-full h-1/2  md:h-1/3 md:top-[-20px] md:left-[20px] object-cover z-[-1] bg-gray-800 divs"></div>
         </div>
 
         <div className="flex lg:flex-col lg:justify-start justify-center h-full lg:ml-20 
