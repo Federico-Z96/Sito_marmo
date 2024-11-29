@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Storia({ id, title, leftImage, subTitle, text, buttonLink }) {
   return (
-    <section id={id} className="py-4 mx-auto max-w-screen-lg lg:mt-12 ">
+    <section id={id} className="py-8 lg:py-20 px-4 lg:px-0 md:px-8 mx-auto max-w-screen-lg">
       {/* Video sopra il titolo */}
       <div className="mb-8">
         {/* <video

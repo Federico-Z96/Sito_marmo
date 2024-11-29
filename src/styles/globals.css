@@ -25,14 +25,16 @@ body {
 @font-face {
   font-family: "Roboto-b";
   src: url("../pages/fonts/Roboto/Roboto-Black.ttf");
-  font-weight: 900; /* titoli*/
+  font-weight: 900;
+  /* titoli*/
   font-style: normal;
 }
 
 @font-face {
   font-family: "Roboto-t";
   src: url("../pages/fonts/Roboto/Roboto-Thin.ttf");
-  font-weight: 100; /* paragrafi */
+  font-weight: 100;
+  /* paragrafi */
   font-style: normal;
 }
 
@@ -47,6 +49,7 @@ p {
   font-family: "Roboto-t", sans-serif;
   font-weight: 100;
 }
+
 footer a {
   font-family: "Roboto-t", sans-serif;
   font-weight: 100;
@@ -61,13 +64,52 @@ h2 {
 }
 
 /* classe che forza la disabilitazione dell'animazione */
-.disable-aos {
+/* .disable-aos {
   opacity: 1 !important;
   transform: none !important;
   animation: none !important;
+} */
+
+.ham {
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  transition: transform 400ms;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.hamRotate.active {
+  transform: rotate(45deg);
+}
+
+.line {
+  fill: none;
+  transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
+  stroke: #000;
+  stroke-width: 5.5;
+  stroke-linecap: round;
+}
+
+.ham1 .top {
+  stroke-dasharray: 40 139;
+}
+
+.ham1 .bottom {
+  stroke-dasharray: 40 180;
+}
+
+.ham1.active .top {
+  stroke-dashoffset: -98px;
+}
+
+.ham1.active .bottom {
+  stroke-dashoffset: -138px;
 }
 
 @media (max-width: 1024px) {
+
   /* Tablet */
   h1 {
     font-size: 2rem;
@@ -105,18 +147,18 @@ h2 {
   h3 {
     font-size: 1.25rem !important;
   }
+
   p {
     font-size: 0.875rem;
   }
-  .divs{
+
+  .divs {
     display: none;
   }
+
   .storia-btn {
     display: block;
-    margin: 0 auto; 
-    text-align: center; 
+    margin: 0 auto;
+    text-align: center;
   }
 }
-
-
-

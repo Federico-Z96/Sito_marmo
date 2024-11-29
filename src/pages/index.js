@@ -30,7 +30,7 @@ export default function Home() {
       <main>
         <video
           src="/lavorazione marmo-video.mp4"
-          className="w-full max-w-full h-auto object-cover mb-4"
+          className="w-full max-w-full h-auto object-cover  mb-4"
           autoPlay
           muted
           loop
@@ -46,7 +46,7 @@ export default function Home() {
                 collaborazione con grandi nomi dell'architettura, realizza progetti unici per musei e gallerie, trasformando il marmo 
                 in opere d'arte. Un connubio perfetto tra tradizione e modernità, capace di soddisfare anche i clienti più esigenti."
           buttonLink="/#contatti"
-        />
+        /> 
 
         <ChiSiamo
           id="chi-siamo"

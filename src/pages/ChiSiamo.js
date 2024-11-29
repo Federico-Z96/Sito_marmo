@@ -2,7 +2,7 @@ import React from "react";
 
 export default function ChiSiamo({ id, title, subtitle, imageSrc, extraImageSrc, description }) {
   return (
-    <section id={id} className="py-16 mx-auto max-w-screen-lg lg:mt-24 relative" data-aos="fade-up">
+    <section id={id} className="py-8 lg:py-20 mt-8 lg:mt-40 px-4 lg:px-0 mx-auto max-w-screen-lg relative" data-aos="fade-up">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
 
         <div className="h-auto relative">

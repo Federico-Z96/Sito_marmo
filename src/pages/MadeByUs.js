@@ -1,6 +1,6 @@
 export default function MadeByUs({ id }) {
     return (
-        <div id={id} className=" mx-auto max-w-screen-lg lg:mt-12" >
+        <div id={id} className="py-8 lg:py-20 px-4 lg:px-0 mx-auto max-w-screen-lg">
             {/* Titoli allineati a destra */}
             <h2 className="text-8xl font-bold text-gray-800 lg:text-right lg:text-right text-center">
                 Made by Us

@@ -8,16 +8,8 @@ export default function Contatti({
   socialLinks,
 }) {
   return (
-    <section
-      id={id}
-      className="mx-auto max-w-screen-lg relative mb-24 mt-12 lg:pt-12"
-    >
-      <h2
-        className="text-8xl font-bold text-gray-800 pb-4 text-center lg:text-left"
-        data-aos="fade-up"
-      >
-        {title}
-      </h2>
+    <section id={id} className="mx-auto max-w-screen-lg relative mb-24 mt-12 lg:pt-12" >
+      <h2 className="text-8xl font-bold text-gray-800 pb-4 text-center lg:text-left" data-aos="fade-up">{title}</h2>
 
       <div className="relative px-4 md:px-4">
         <img

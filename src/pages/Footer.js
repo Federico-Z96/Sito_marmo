@@ -1,6 +1,6 @@
 export default function Footer({ logo }) {
   return (
-    <footer className=" bg-cover bg-center py-16 relative mt-6 bg-gray-800  text-white w-full" >
+    <footer className="bg-cover bg-center py-8 lg:py-20 relative mt-6 bg-gray-800 text-white w-full">
       <div className="container mx-auto text-center">
 
         <a
