@@ -1,6 +1,6 @@
 export default function Contatti({ id, title, imageSrc, imgSfondoCont, subTitle, text, socialLinks }) {
   return (
-    <section id={id} className="mx-auto max-w-screen-lg relative mb-24 mt-12 lg:pt-12" >
+    <section id={id} className="py-8 lg:py-20 px-4 lg:px-0 mx-auto relative max-w-screen-lg">
       <h2 className="text-8xl font-bold text-gray-800 pb-4 text-center lg:text-left" data-aos="fade-up">{title}</h2>
 
       <div className="relative">

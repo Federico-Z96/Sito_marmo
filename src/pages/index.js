@@ -28,15 +28,17 @@ export default function Home() {
       {/* <HeaderCarusel /> */}
       <Navbar />
       <main>
-        <video
-          src="/lavorazione marmo-video.mp4"
-          className="w-full max-w-full h-auto object-cover  mb-4"
-          autoPlay
-          muted
-          loop
-          playsInline
-        ></video>
-        <Storia
+        <section>
+          <video
+            src="/lavorazione marmo-video.mp4"
+            className="w-full h-[70vh] lg:h-[100vh] object-cover"
+            autoPlay
+            muted
+            loop
+            playsInline
+          ></video>
+        </section>
+        {/* <Storia
           id="storia"
           title="Storia"
           leftImage="/lavorazione-sfera-marmo-transformed.jpeg"
@@ -46,7 +48,7 @@ export default function Home() {
                 collaborazione con grandi nomi dell'architettura, realizza progetti unici per musei e gallerie, trasformando il marmo 
                 in opere d'arte. Un connubio perfetto tra tradizione e modernità, capace di soddisfare anche i clienti più esigenti."
           buttonLink="/#contatti"
-        />
+        /> */}
 
         <ChiSiamo
           id="chi-siamo"
