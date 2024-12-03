@@ -86,12 +86,19 @@ export default function Navbar() {
                 <li className="mx-4">
                     <a
                         className="uppercase relative text-black text-[2rem] lg:text-[1rem] font-bold text-lg py-2 transition-all duration-300 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[2px] after:bg-black after:transition-all after:duration-300 hover:after:w-full"
+                        href="#preventivo"
+                    >
+                        Preventivo
+                    </a>
+                </li>
+                <li className="mx-4">
+                    <a
+                        className="uppercase relative text-black text-[2rem] lg:text-[1rem] font-bold text-lg py-2 transition-all duration-300 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[2px] after:bg-black after:transition-all after:duration-300 hover:after:w-full"
                         href="#contatti"
                     >
                         Contatti
                     </a>
                 </li>
-
             </ul>
         </nav>
     );

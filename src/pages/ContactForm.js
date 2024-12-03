@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-const ContactForm = () => {
+const ContactForm = ({ id }) => {
     const [formData, setFormData] = useState({
         name: "",
         email: "",
@@ -32,7 +32,7 @@ const ContactForm = () => {
     };
 
     return (
-        <section className="w-100 bg-gray-800 py-12">
+        <section id={id} className="w-100 bg-gray-800 py-12">
             <div className="mx-auto max-w-screen-lg relative">
                 <h2 className="text-8xl font-bold text-white pb-4 text-center uppercase">Richiedi Preventivo</h2>
                 <form onSubmit={handleSubmit} className="space-y-6 p-6 bg-white">

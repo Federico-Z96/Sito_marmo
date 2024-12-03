@@ -44,7 +44,7 @@ export default function Home() {
           description="Maniscale Marmi è un'azienda leader nella lavorazione del marmo, specializzata in prodotti di alta qualità per arredare e decorare. Con una tradizione artigianale tramandata da generazioni, offre soluzioni su misura come scale, tavoli, cucine, statue e oggettistica. Ogni pezzo è realizzato con cura e materiali di alta qualità, garantendo durabilità e bellezza senza tempo. L'azienda si distingue per trasformare il marmo in opere d'arte, soddisfacendo una clientela esigente e raffinata."
         />
         <MadeByUs id="made-by-us" />
-        <ContactForm />
+        <ContactForm id="preventivo" />
         <Contatti
           id="contatti"
           title="Contatti"
