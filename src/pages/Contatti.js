@@ -15,7 +15,7 @@ export default function Contatti({
           alt="Contatti"
           className="w-full h-auto object-cover"
         />
-        <div className="absolute lg:bottom-[-75px] lg:right-[-75px] lg:w-1/2 lg:h-2/3 bg-gray-800 hidden md:block md:w-1/3 md:h-1/3 md:bottom-[-20px] md:right-[-1px] z-[-1] divs"></div>
+        <div className="absolute lg:bottom-[-75px] lg:right-[-75px] lg:w-1/2 lg:h-2/3 bg-black hidden md:block md:w-1/3 md:h-1/3 md:bottom-[-20px] md:right-[-1px] z-[-1] divs"></div>
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 pt-6 ">

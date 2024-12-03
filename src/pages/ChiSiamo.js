@@ -13,7 +13,7 @@ export default function ChiSiamo({ id, title, subtitle, imageSrc, description })
             className="w-full h-auto object-cover"
           />
 
-          <div className="absolute lg:top-[-75px] lg:left-20 lg:w-full lg:h-1/2  md:h-1/3 md:top-[-20px] md:left-[20px] object-cover z-[-1] bg-gray-800 divs"></div>
+          <div className="absolute lg:top-[-75px] lg:left-20 lg:w-full lg:h-1/2  md:h-1/3 md:top-[-20px] md:left-[20px] object-cover z-[-1] bg-black divs"></div>
         </div>
 
         <div className="flex lg:flex-col lg:justify-start justify-center h-full lg:ml-20 
@@ -26,8 +26,3 @@ export default function ChiSiamo({ id, title, subtitle, imageSrc, description })
     </section>
   );
 }
-
-
-
-
-

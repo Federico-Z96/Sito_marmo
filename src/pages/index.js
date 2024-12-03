@@ -3,6 +3,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 
 import Navbar from "./Navbar";
+import AnimatedLogo from "./AnimatedLogo";
 import MadeByUs from "./MadeByUs";
 import ChiSiamo from "./ChiSiamo";
 import ContactForm from "./ContactForm";
@@ -11,31 +12,21 @@ import Footer from "./Footer";
 
 export default function Home() {
   useEffect(() => {
-    // Inizializza AOS
     AOS.init({
-      duration: 1000, // Durata animazioni
-      once: true, // Animazione una sola volta
+      duration: 1000,
+      once: true,
     });
 
-    // Seleziona tutti gli <h*> e <p> dinamicamente
     const headings = document.querySelectorAll(".animated");
     headings.forEach((element) => {
-      element.setAttribute("data-aos", "fade-up"); // Assegna l'effetto "fade-up"
+      element.setAttribute("data-aos", "fade-up");
     });
   }, []);
   return (
     <>
       <Navbar />
       <main>
-        <video
-          src="/lavorazione marmo-video.mp4"
-          className="w-full max-w-full h-[70vh] lg:h-[100vh] object-cover mb-4"
-          autoPlay
-          muted
-          loop
-          playsInline
-        ></video>
-
+        <AnimatedLogo />
         <ChiSiamo
           id="chi-siamo"
           title="Chi Siamo"

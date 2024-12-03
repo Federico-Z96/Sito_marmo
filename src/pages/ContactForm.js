@@ -32,10 +32,10 @@ const ContactForm = ({ id }) => {
     };
 
     return (
-        <section id={id} className="w-100 bg-gray-800 py-12">
+        <section id={id} className="w-100 bg-black py-12 lg:py-24">
             <div className="mx-auto max-w-screen-lg relative">
                 <h2 className="text-8xl font-bold text-white pb-4 text-center uppercase">Richiedi Preventivo</h2>
-                <form onSubmit={handleSubmit} className="space-y-6 p-6 bg-white">
+                <form onSubmit={handleSubmit} className="space-y-6 py-6 lg:py-12 px-6 lg:px-8">
                     <div className="relative pb-4">
                         <input
                             type="text"
@@ -49,7 +49,7 @@ const ContactForm = ({ id }) => {
                         />
                         <label
                             htmlFor="name"
-                            className="absolute left-0 top-2 text-gray-500 text-sm transition-all peer-placeholder-shown:translate-y-2 peer-placeholder-shown:scale-100 peer-placeholder-shown:text-gray-400 peer-focus:-translate-y-6 peer-focus:scale-75 peer-focus:text-blue-500 bg-white px-1"
+                            className="absolute left-0 top-0 text-gray-500 text-2xl transition-all transform origin-left peer-placeholder-shown:translate-y-2 peer-placeholder-shown:scale-100 peer-placeholder-shown:text-gray-400 peer-focus:-translate-y-6 peer-focus:scale-75 peer-focus:text-gray-500"
                         >
                             Nome
                         </label>
@@ -67,7 +67,7 @@ const ContactForm = ({ id }) => {
                         />
                         <label
                             htmlFor="email"
-                            className="absolute left-0 top-2 text-gray-500 text-sm transition-all peer-placeholder-shown:translate-y-2 peer-placeholder-shown:scale-100 peer-placeholder-shown:text-gray-400 peer-focus:-translate-y-6 peer-focus:scale-75 peer-focus:text-blue-500 bg-white px-1"
+                            className="absolute left-0 top-0 text-gray-500 text-2xl transition-all transform origin-left peer-placeholder-shown:translate-y-2 peer-placeholder-shown:scale-100 peer-placeholder-shown:text-gray-400 peer-focus:-translate-y-6 peer-focus:scale-75 peer-focus:text-gray-500"
                         >
                             Email
                         </label>
@@ -85,7 +85,7 @@ const ContactForm = ({ id }) => {
                         ></textarea>
                         <label
                             htmlFor="message"
-                            className="absolute left-0 top-2 text-gray-500 text-sm transition-all peer-placeholder-shown:translate-y-2 peer-placeholder-shown:scale-100 peer-placeholder-shown:text-gray-400 peer-focus:-translate-y-6 peer-focus:scale-75 peer-focus:text-blue-500 bg-white px-1"
+                            className="absolute left-0 top-0 text-gray-500 text-2xl transition-all transform origin-left peer-placeholder-shown:translate-y-2 peer-placeholder-shown:scale-100 peer-placeholder-shown:text-gray-400 peer-focus:-translate-y-6 peer-focus:scale-75 peer-focus:text-gray-500"
                         >
                             Messaggio
                         </label>

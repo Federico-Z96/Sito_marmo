@@ -17,17 +17,22 @@ export default function Navbar() {
 
     useEffect(() => {
         const anchors = document.querySelectorAll('a[href^="#"]');
+        const navbarHeight = document.querySelector('nav')?.offsetHeight || 0; // Altezza dinamica della navbar
+
         anchors.forEach((anchor) => {
             anchor.addEventListener("click", function (e) {
                 e.preventDefault();
 
                 const target = document.querySelector(this.getAttribute("href"));
                 if (target) {
-                    target.scrollIntoView({
+                    // Usa getBoundingClientRect per una posizione più precisa
+                    const targetPosition = target.getBoundingClientRect().top + window.scrollY - navbarHeight;
+                    window.scrollTo({
+                        top: targetPosition,
                         behavior: "smooth",
                     });
                 }
-                setMenuOpen(false); // Chiudi il menu dopo il click
+                setMenuOpen(false);
             });
         });
 
@@ -39,7 +44,7 @@ export default function Navbar() {
     }, []);
 
     return (
-        <nav className="p-4 fixed top-0 w-full bg-white shadow-md z-50 flex justify-between lg:justify-center">
+        <nav className="p-4 fixed top-0 w-full bg-black shadow-md z-50 flex justify-between lg:justify-center">
             <div className="w-full lg:w-auto flex justify-between lg:justify-center items-center p-2">
                 <button
                     className="block md:hidden text-black focus:outline-none z-10"
@@ -64,12 +69,12 @@ export default function Navbar() {
             </div>
 
             <ul
-                className={`fixed inset-0 gap-6 bg-white flex flex-col justify-center items-center transition-transform duration-500 transform ${menuOpen ? "translate-y-0" : "-translate-y-full"
+                className={`fixed inset-0 gap-6 bg-black flex flex-col justify-center items-center transition-transform duration-500 transform ${menuOpen ? "translate-y-0" : "-translate-y-full"
                     } md:static md:translate-y-0 md:flex-row md:h-auto md:overflow-visible`}
             >
                 <li className="mx-4">
                     <a
-                        className="uppercase relative text-black text-[2rem] lg:text-[1rem] font-bold text-lg py-2 transition-all duration-300 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[2px] after:bg-black after:transition-all after:duration-300 hover:after:w-full"
+                        className="uppercase relative text-white text-[2rem] lg:text-[1rem] font-bold text-lg py-2 transition-all duration-300 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[2px] after:bg-white after:transition-all after:duration-300 hover:after:w-full"
                         href="#chi-siamo"
                     >
                         Chi Siamo
@@ -77,7 +82,7 @@ export default function Navbar() {
                 </li>
                 <li className="mx-4">
                     <a
-                        className="uppercase relative text-black text-[2rem] lg:text-[1rem] font-bold text-lg py-2 transition-all duration-300 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[2px] after:bg-black after:transition-all after:duration-300 hover:after:w-full"
+                        className="uppercase relative text-white text-[2rem] lg:text-[1rem] font-bold text-lg py-2 transition-all duration-300 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[2px] after:bg-white after:transition-all after:duration-300 hover:after:w-full"
                         href="#made-by-us"
                     >
                         Made by Us
@@ -85,7 +90,7 @@ export default function Navbar() {
                 </li>
                 <li className="mx-4">
                     <a
-                        className="uppercase relative text-black text-[2rem] lg:text-[1rem] font-bold text-lg py-2 transition-all duration-300 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[2px] after:bg-black after:transition-all after:duration-300 hover:after:w-full"
+                        className="uppercase relative text-white text-[2rem] lg:text-[1rem] font-bold text-lg py-2 transition-all duration-300 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[2px] after:bg-white after:transition-all after:duration-300 hover:after:w-full"
                         href="#preventivo"
                     >
                         Preventivo
@@ -93,7 +98,7 @@ export default function Navbar() {
                 </li>
                 <li className="mx-4">
                     <a
-                        className="uppercase relative text-black text-[2rem] lg:text-[1rem] font-bold text-lg py-2 transition-all duration-300 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[2px] after:bg-black after:transition-all after:duration-300 hover:after:w-full"
+                        className="uppercase relative text-white text-[2rem] lg:text-[1rem] font-bold text-lg py-2 transition-all duration-300 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[2px] after:bg-white after:transition-all after:duration-300 hover:after:w-full"
                         href="#contatti"
                     >
                         Contatti
