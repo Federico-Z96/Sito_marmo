@@ -1,5 +1,5 @@
 {
-  "name": "il-tempio-del-marmo",
+  "name": "maniscale-marmi",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -12,8 +12,7 @@
     "aos": "^2.3.4",
     "next": "^15.0.3",
     "react": "19.0.0-rc-66855b96-20241106",
-    "react-dom": "19.0.0-rc-66855b96-20241106",
-    "swiper": "^11.1.15"
+    "react-dom": "19.0.0-rc-66855b96-20241106"
   },
   "devDependencies": {
     "eslint": "^8",

@@ -1,33 +1,11 @@
 export default function Footer({ logo }) {
   return (
-    <footer className="bg-cover bg-center py-8 lg:py-20 relative mt-6 bg-gray-800 text-white w-full">
+    <footer className="bg-cover bg-center py-4 relative mt-6 bg-gray-800 text-white w-full">
       <div className="container mx-auto text-center">
-
-        <a
-          href="#top"
-          className="inline-block mb-6"
-          data-aos="none"
-          aria-label="Torna all'inizio"
-        >
-          <img
-            src={logo}
-            alt="Logo Azienda"
-            className="w-20 h-20 mx-auto hover:scale-150 transition-transform duration-500 hover:rotate-12"
-          />
-        </a>
-
         <p className="text-sm md:text-base font-medium ">
-          © {new Date().getFullYear()} Il Tempio del Marmo. Tutti i diritti riservati.
+          © {new Date().getFullYear()} Maniscale Marmi. Tutti i diritti riservati | Made by <a href="https://belicedigital.com" target="_blank">BeliceDigital</a>
         </p>
-
-        <a
-          href="tel:+391234567890"
-          className="hover:underline hover:text-bold font-Roboto-t"
-        >
-          Tel: +39 123 456 7890
-        </a>
-
       </div>
-    </footer>
+    </footer >
   );
 }

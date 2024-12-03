@@ -39,18 +39,8 @@ export default function Navbar() {
     }, []);
 
     return (
-        <nav className="fixed top-0 w-full bg-white shadow-md z-50 flex justify-between lg:justify-center">
+        <nav className="p-4 fixed top-0 w-full bg-white shadow-md z-50 flex justify-between lg:justify-center">
             <div className="w-full lg:w-auto flex justify-between lg:justify-center items-center p-2">
-                {/* Logo */}
-                <a href="/" className="flex items-center">
-                    <img
-                        src="/un_cubo_di_marmo_senza_sfondo-removebg-preview.png"
-                        alt="Logo"
-                        className="h-10 w-10 object-contain hover:scale-150 transition-transform duration-300"
-                    />
-                </a>
-
-                {/* Icona Hamburger */}
                 <button
                     className="block md:hidden text-black focus:outline-none z-10"
                     onClick={() => setMenuOpen(!menuOpen)}
@@ -73,15 +63,13 @@ export default function Navbar() {
                 </button>
             </div>
 
-            {/* Menu */}
             <ul
                 className={`fixed inset-0 gap-6 bg-white flex flex-col justify-center items-center transition-transform duration-500 transform ${menuOpen ? "translate-y-0" : "-translate-y-full"
                     } md:static md:translate-y-0 md:flex-row md:h-auto md:overflow-visible`}
             >
                 <li className="mx-4">
                     <a
-                        className="text-black text-[2rem] lg:text-[1rem] font-bold text-lg px-4 py-2 rounded-md bg-white 
-                       transition-all duration-300 hover:bg-gradient-to-r hover:from-white hover:to-gray-800 hover:text-white"
+                        className="uppercase relative text-black text-[2rem] lg:text-[1rem] font-bold text-lg py-2 transition-all duration-300 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[2px] after:bg-black after:transition-all after:duration-300 hover:after:w-full"
                         href="#chi-siamo"
                     >
                         Chi Siamo
@@ -89,8 +77,7 @@ export default function Navbar() {
                 </li>
                 <li className="mx-4">
                     <a
-                        className="text-black text-[2rem] lg:text-[1rem] font-bold text-lg px-4 py-2 rounded-md bg-white 
-                       transition-all duration-300 hover:bg-gradient-to-r hover:from-white hover:to-gray-800 hover:text-white"
+                        className="uppercase relative text-black text-[2rem] lg:text-[1rem] font-bold text-lg py-2 transition-all duration-300 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[2px] after:bg-black after:transition-all after:duration-300 hover:after:w-full"
                         href="#made-by-us"
                     >
                         Made by Us
@@ -98,13 +85,13 @@ export default function Navbar() {
                 </li>
                 <li className="mx-4">
                     <a
-                        className="text-black text-[2rem] lg:text-[1rem] font-bold text-lg px-4 py-2 rounded-md bg-white 
-                       transition-all duration-300 hover:bg-gradient-to-r hover:from-white hover:to-gray-800 hover:text-white"
+                        className="uppercase relative text-black text-[2rem] lg:text-[1rem] font-bold text-lg py-2 transition-all duration-300 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[2px] after:bg-black after:transition-all after:duration-300 hover:after:w-full"
                         href="#contatti"
                     >
                         Contatti
                     </a>
                 </li>
+
             </ul>
         </nav>
     );
